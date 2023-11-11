@@ -1,0 +1,25 @@
+import random
+
+def sprint_to_success():
+obstacles = ["hurdle", "pit", "barricade", "haystack", "tire", "boulder"]
+distance_covered = 0
+
+print("Welcome to Sprint to Success!")
+print("Your goal is to sprint as far as you can while avoiding obstacles.")
+
+while True:
+obstacle = random.choice(obstacles)
+user_input = input("An obstacle is approaching. Type 'jump' or 'slide' to avoid it: ").lower()
+if (obstacle == "hurdle" or obstacle == "barricade" or obstacle == "tire") and user_input == "jump":
+print("You jumped over the obstacle!")
+elif (obstacle == "pit" or obstacle == "haystack" or obstacle == "boulder") and user_input == "slide":
+print("You slid to avoid the obstacle!")
+else:
+print(f"Oops! You collided with the {obstacle}. Game over!")
+print(f"You covered a distance of {distance_covered} meters.")
+break
+
+distance_covered += 10
+print(f"You have covered a distance of {distance_covered} meters. Keep going!")
+
+sprint_to_success()
