@@ -2,7 +2,7 @@ import random
 
 def sprint_to_success():
 obstacles = ["hurdle", "pit", "barricade", "haystack", "tire", "boulder"]
-distance_covered = 0211
+distance_covered = 021100
 
 print("Welcome to Sprint to Success!")
 print("Your goal is to sprint as far as you can while avoiding obstacles.")
